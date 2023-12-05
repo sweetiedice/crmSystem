@@ -5,21 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:crmSystem"
         mc:Ignorable="d"
-        Title="ООО ''Цветы''" MinHeight="600" MinWidth="800" Height="800" Width="1200" WindowStartupLocation="CenterScreen">
+        Title="ООО ''Цветы''" MinHeight="600" MinWidth="800" WindowState="Maximized" WindowStartupLocation="CenterScreen" Icon="Resourses/icon.ico">
 	<Grid>
 		<Grid>
 			<Grid.ColumnDefinitions>
-                <ColumnDefinition />
+                <ColumnDefinition   />
                 <ColumnDefinition Width="10*"/>
                 <ColumnDefinition/>
 				<ColumnDefinition Width="250"/>
 			</Grid.ColumnDefinitions>
 			<Grid.RowDefinitions>
-				<RowDefinition />
-				<RowDefinition Height="10*"/>
+				<RowDefinition Height="40"/>
+
+                <RowDefinition Height="10*"/>
 				<RowDefinition />
 			</Grid.RowDefinitions>
-            <Image Source="Resourses/logo.png" Width="50" Height="50"/>
+            <Image Stretch="Uniform" Source="Resourses/logo.png" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="5"/>
             <Border Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" BorderBrush="#349c3d" BorderThickness="5" Padding="1">
                 <Frame NavigationUIVisibility="Hidden"  x:Name="MainFrame"/>
             </Border>

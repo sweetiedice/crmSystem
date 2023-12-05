@@ -30,7 +30,7 @@
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1.5*"/>
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
@@ -47,7 +47,7 @@
                 <TextBox  FontSize="16" Padding="5" BorderThickness="0,0,0,2" BorderBrush="#349c3d" Background="Transparent" Grid.Row="3" Margin="5" Grid.ColumnSpan="2" />
                 <TextBlock Text="Пароль"  FontWeight="Bold" FontSize="20" VerticalAlignment="Bottom" Grid.Row="4" Margin="5" Grid.ColumnSpan="2" Foreground="#FF1A1A1A"/>
                 <PasswordBox  FontSize="16" Padding="5" BorderThickness="0,0,0,2" BorderBrush="#349c3d" Background="Transparent" Grid.Row="5" Margin="5" Grid.ColumnSpan="2"/>
-                <Button Cursor="Hand" Click="ButtonLoginClick" HorizontalAlignment="Center" FontWeight="Bold" Padding="20,5" Foreground="#FF1A1A1A" Style="{DynamicResource ButtonRoundStyle}" FontSize="20" Content="Войти" Grid.Row="7" Margin="5" Grid.ColumnSpan="2"/>
+                <Button VerticalContentAlignment="Center" Cursor="Hand" Click="ButtonLoginClick" HorizontalAlignment="Center" FontWeight="Bold" Padding="20,5" Foreground="#FF1A1A1A" Style="{DynamicResource ButtonRoundStyle}" FontSize="20" Content="Войти" Grid.Row="7" Margin="5" Grid.ColumnSpan="2"/>
                 <TextBlock  TextAlignment="Left" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="9" Margin="5" Grid.ColumnSpan="1">                                
                <Hyperlink FontSize="13" Cursor="Hand" Click="HyperlinkRegistrationClick" Foreground="#349c3d" TextDecorations="None">Нет учетной записи? Регистрация.</Hyperlink>
                 </TextBlock>
