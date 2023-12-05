@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:crmSystem"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="ООО ''Цветы''" MinHeight="600" MinWidth="800" Height="800" Width="1200" >
+	<Grid>
+		<Grid>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+				<ColumnDefinition/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition />
+				<RowDefinition Height="10*"/>
+				<RowDefinition />
+			</Grid.RowDefinitions>
+			<TextBox/>
+			<DataGrid Grid.Row="1" Grid.ColumnSpan="2"/>
+			<Frame NavigationUIVisibility="Hidden" Grid.Column="2" x:Name="userToolsFrame"/>
+		</Grid>
+	</Grid>
 </Window>
