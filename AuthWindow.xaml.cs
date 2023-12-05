@@ -28,11 +28,17 @@ namespace crmSystem
 
         private void HyperlinkLoginGuestClick(object sender, RoutedEventArgs e)
         {
-
+            new MainWindow().Show();
+            Close();
         }
         private void HyperlinkRegistrationClick(object sender, RoutedEventArgs e)
         {
             MessageBox.Show("Регистрация в приложении находится в разработке!", "Регистрация", MessageBoxButton.OK, MessageBoxImage.Question);
+        }
+
+        private void Window_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DragMove();
         }
     }
 }

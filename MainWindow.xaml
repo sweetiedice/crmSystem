@@ -5,8 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:crmSystem"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
-    </Grid>
+        Title="ООО ''Цветы''" MinHeight="600" MinWidth="800" Height="800" Width="1200" WindowStartupLocation="CenterScreen">
+	<Grid>
+		<Grid>
+			<Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition/>
+				<ColumnDefinition Width="250"/>
+			</Grid.ColumnDefinitions>
+			<Grid.RowDefinitions>
+				<RowDefinition />
+				<RowDefinition Height="10*"/>
+				<RowDefinition />
+			</Grid.RowDefinitions>
+            <Image Source="Resourses/logo.png" Width="50" Height="50"/>
+            <Border Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="3" BorderBrush="#349c3d" BorderThickness="5" Padding="1">
+                <Frame NavigationUIVisibility="Hidden"  x:Name="MainFrame"/>
+            </Border>
+            <StackPanel Grid.Row="1" Grid.Column="3" Background="#92d050">
+                <ComboBox Margin="5" SelectedIndex="0">
+                    <ComboBoxItem>Товары</ComboBoxItem>
+                    <ComboBoxItem>Заказы</ComboBoxItem>
+                </ComboBox>
+                <Button x:Name="Btn_AddRecord" Margin="5" Content="Добавить запись"/>
+                <Button x:Name="Btn_DelRecord" Margin="5" Content="Удалить запись"/>
+                <Button x:Name="Btn_ChangeRecord" Margin="5" Content="Редактировать запись"/>
+            </StackPanel>
+        </Grid>
+	</Grid>
 </Window>
